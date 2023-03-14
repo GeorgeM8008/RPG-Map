@@ -5,10 +5,10 @@ row = 3
 col = 0
 
 
-layout = ['Enemy Room', 'Supply Room', 'Safe Room', 'Escape Pod'
-          'Safe Room',  'Safe Room',  'Enemy Room', 'Safe Room'
-          'Safe Room',  'Safe Room',  'Safe Room',  'Enemy Room'
-          'Starting Room', 'Safe Room', 'Enemy Room' 'Safe Room']
+layout = [['Enemy Room', 'Supply Room', 'Safe Room', 'Escape Pod'],
+          ['Safe Room',  'Safe Room',  'Enemy Room', 'Safe Room'],
+          ['Safe Room',  'Safe Room',  'Safe Room',  'Enemy Room'],
+          ['Starting Room', 'Safe Room', 'Enemy Room' 'Safe Room'],]
 
 
 def move():
@@ -21,8 +21,7 @@ def move():
         elif row == 0:
             print("You have hit a wall.")
             row = 0
-        while choice == "Go North" or "go north" or "go south" or "Go South" or "go west" or "Go West" or "explore" or "attack" or "defend" or "quit" or "Quit":
-            move()
+        
 
 
         
@@ -32,32 +31,34 @@ def move():
             print(layout[row][col])
         elif row == 3:
             print("You have hit a wall.")
-        while choice == "Go North" or "go north" or "go south" or "Go South" or "go west" or "Go West" or "explore" or "attack" or "defend" or "quit" or "Quit":
-            move()
+        #while choice == "Go North" or "go north" or "go south" or "Go South" or "go west" or "Go West" or "explore" or "attack" or "defend" or "quit" or "Quit":
+           # move()
 
 
         
     elif choice == "go west":
         if col > 0:
-            row -= 1
+            col -= 1
             print(layout[row][col])
-        elif row == 0:
+        elif col == 0:
             print("You have hit a wall.")
-        while choice == "Go North" or "go north" or "go south" or "Go South" or "go west" or "Go West" or "explore" or "attack" or "defend" or "quit" or "Quit":
-            move()
+        #while choice == "Go North" or "go north" or "go south" or "Go South" or "go west" or "Go West" or "explore" or "attack" or "defend" or "quit" or "Quit":
+          #  move()
 
 
         
     elif choice == "go east":
-        if row < 3:
-            row += 1
+        if col < 3:
+            col += 1
             print(layout[row][col])
-        elif row == 3:
+        elif col == 3:
             print("You have hit a wall.")
-        while choice == "Go North" or "go north" or "go south" or "Go South" or "go west" or "Go West" or "explore" or "attack" or "defend" or "quit" or "Quit":
-            move()
+       # while choice == "Go North" or "go north" or "go south" or "Go South" or "go west" or "Go West" or "explore" or "attack" or "defend" or "quit" or "Quit":
+           # move()
 
 
-print(layout[row][col])
-move()
+
+while True:
+  print(f"Location: {layout[row][col]}")
+  move()
   
