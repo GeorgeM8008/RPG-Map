@@ -8,7 +8,7 @@ col = 0
 layout = [['Enemy Room', 'Supply Room', 'Safe Room', 'Escape Pod'],
           ['Safe Room',  'Safe Room',  'Enemy Room', 'Safe Room'],
           ['Safe Room',  'Safe Room',  'Safe Room',  'Enemy Room'],
-          ['Starting Room', 'Safe Room', 'Enemy Room' 'Safe Room'],]
+          ['Starting Room', 'Safe Room', 'Enemy Room', 'Safe Room'],]
 
 
 def move():
