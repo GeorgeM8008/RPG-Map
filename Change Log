@@ -14,10 +14,10 @@ added - options to walk's sub menu "N,S,E,W" in movement()
 fixed - movement so player can not walk off "map"
 
 v2.0
-Name: RPG: _______________
+Name: RPG: Map + Inventory
 update - games name
-*add - change log
-*add - a dictionary to hold map-tile information (add description strings)
-*fix - how room descriptions print in the game
+*added - change log
+*added - a dictionary to hold map-tile information (add description strings)
+*fixed - how room descriptions print in the game
 *add - another dictionary (for a character or object)
-*add - empty inventory list
+*added - empty inventory list
